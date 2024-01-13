@@ -1,0 +1,155 @@
+<html>
+<head>
+<title>flex</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+color:white;
+font-family:"poppins",sans-serif;
+}
+.about-sec{
+background:linear-gradient(#0000001a,#000000b8),url(restaurant.jpeg);
+padding:60px 0;
+background-position:center;
+background-size:cover;
+}
+.container{
+width:90%;
+margin:auto;
+}
+.row{
+display:flex;
+justify-content:space-around;
+align-items:center;
+}
+.col{
+width:50%;
+padding:15px;
+}
+.about-sec h3{
+font-size:25px;
+font-weight:600;
+padding-bottom:12px;
+}
+.para-it{
+font-style:italic;
+padding-bottom:10px;
+font-size:16px;
+}
+ul{
+padding-bottom:10px;
+}
+ul li{
+list-style-type:none;
+padding-bottom:6px;
+}
+li i{
+color:goldenrod;
+font-size:16px !important;
+padding-right:5px;
+}
+.img-sec img{
+max-width:100%;
+border:4px solid grey;
+vertical-align:middle;
+}
+.img-sec{
+position:relative;
+}
+.img-sec::after{
+content:"";
+position:absolute;
+border-left:5px solid goldenrod;
+border-top:5px solid goldenrod;
+width:60px;
+height:60px;
+top:5%;
+left:5%;
+}
+.img-sec::before{
+content:"";
+position:absolute;
+border-right:5px solid goldenrod;
+border-bottom:5px solid goldenrod;
+width:60px;
+height:60px;
+bottom:5%;
+right:5%;
+}
+@media (min-width:320px){
+.container{
+width:100%;
+margin:auto;
+}
+.row{
+display:flex;
+flex-wrap:wrap;
+justify-content:space-around;
+align-items:center;
+}
+.col{
+width:100%;
+padding:15px;
+}
+}
+@media(min-width:690px){
+.container{
+width:90%;
+margin:auto;
+}
+.row{
+display:flex;
+justify-content:space-around;
+align-items:center;
+}
+.col{
+width:50%;
+padding:15px;
+}
+}
+@media(min-width:1020px){
+.container{
+width:90%;
+margin:auto;
+}
+.row{
+display:flex;
+justify-content:space-around;
+align-items:center;
+}
+.col{
+width:50%;
+padding:15px;
+}
+}
+</style>
+</head>
+<body>
+<section class="about-sec">
+<div class="container">
+<div class="row">
+<div class="col">
+<h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+<p class="para-it">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<ul>
+<li><i class="fa-regular fa-circle-check"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+<li><i class="fa-regular fa-circle-check"></i>Duis aute irure dolor in rephrendeit in voluptate velit.</li>
+<li><i class="fa-regular fa-circle-check"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat .Duis aute irure dolor in rephrenderit in voluptate trideta storacalaperdra  mastrio dolore eu fugiat nulla pariatur</li>
+</ul>
+<p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+</div>
+<div class="col">
+<div class="img-sec">
+<img src="about.jpg">
+</div>
+</div>
+</div>
+</div>
+</section>
+</body>
+</html>
